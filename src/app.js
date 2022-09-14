@@ -3,7 +3,7 @@ const app=express();
 const path=require("path")
 const hbs=require("hbs")
 
-const PORT=3000;
+const PORT=process.env.PORT || 3000;
 
 // public static file
 const static_path=path.join(__dirname,"../public")
